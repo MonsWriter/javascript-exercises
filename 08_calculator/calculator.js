@@ -6,20 +6,24 @@ const subtract = function(firstNumber, secondNumber) {
 	return firstNumber - secondNumber;
 };
 
-const sum = function() {
-	
+const sum = function(numbers) {
+  return numbers.reduce((total, current) => total + current, 0);
 };
 
-const multiply = function() {
-
+const multiply = function(numbers) {
+  return numbers.reduce((total, current) => total * current, 1);
 };
 
-const power = function() {
-	
+const power = function(firstNumber, secondNumber) {
+  return firstNumber ** secondNumber;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+	let result = 1;
+  for (let i = 1; i <= number; i++) {
+    result *= i
+  }
+  return result;
 };
 
 // Do not edit below this line
